@@ -12,7 +12,7 @@ describe('Registration', () => {
       });
 
     it('Registration with success', () => {
-      registrationPage.fillSignUpForm('John', 'John', 'johnjohn', '123456', '123456')
+      registrationPage.fillSignUpForm('Yuri', 'John', 'Yurijohn', '123456', '123456')
       registrationPage.submitRegistration()
       cy.location('pathname').should('equal', '/signin')
     })
